@@ -1,0 +1,167 @@
+body,
+html {
+  height: 100%;
+}
+.cart {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.cart .cart-header {
+  position: relative;
+}
+.cart .cart-header h3 {
+  text-align: center;
+  color: #969696;
+  font-size: 25px;
+  font-weight: 400px;
+}
+.cart .cart-safe {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.cart .cart-safe img {
+  margin-top: 6px;
+  width: 18px;
+  height: 18px;
+  vertical-align: top;
+}
+.cart .cart-content {
+  color: #969696;
+  margin-top: 10px;
+}
+.cart .cart-content .head {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+.cart .cart-content .head .logo {
+  width: 22px;
+  height: 18px;
+  background-position: 0px 0px;
+  margin-top: 8px;
+}
+.cart .cart-content .chk {
+  height: 20px;
+  width: 20px;
+  background-position: -180px -89px;
+  margin: 5px;
+}
+.cart .cart-content .item {
+  padding-left: 110px;
+  padding-top: 10px;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+}
+.cart .cart-content .item .it-left {
+  width: 110px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cart .cart-content .item .it-left img {
+  width: 80px;
+  margin-top: 10px;
+}
+.cart .cart-content .item .it-right {
+  width: 100%;
+  color: #000;
+  padding-left: 10px;
+  height: 100px;
+}
+.cart .cart-content .item .it-right .text {
+  height: 36px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.cart .cart-content .item .it-right span {
+  margin-top: 5px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+}
+.cart .cart-content .item .it-right span:nth-child(3) {
+  border-left: none;
+  border-right: none;
+}
+.cart .cart-content .item .it-right .del {
+  margin-top: 10px;
+  width: 18px;
+  height: 24px;
+  float: right;
+  margin-right: 10px;
+}
+.cart .cart-content .item .it-right .del .del-up {
+  width: 100%;
+  height: 4px;
+  margin-bottom: 10px;
+  transform-origin: right;
+  transition: all 0.5s;
+}
+.cart .cart-content .item .it-right .del .del-up img {
+  width: 100%;
+  height: 100%;
+}
+.cart .cart-content .item .it-right .del .del-down {
+  width: 100%;
+  height: 18px;
+}
+.cart .cart-content .item .it-right .del .del-down img {
+  width: 100%;
+  height: 100%;
+}
+.cart .cart-content .item .it-right .del .open .del-up {
+  transform: rotate(10deg);
+}
+.cart .win-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.cart .win-box .del-box {
+  width: 70%;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+}
+.cart .win-box .del-box .text {
+  font-size: 20px;
+  line-height: 40px;
+  padding-bottom: 20px;
+}
+.cart .win-box .del-box .confirm {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+.cart .win-box .del-box .confirm a {
+  margin-right: 30px;
+  line-height: 30px;
+  float: left;
+  height: 30px;
+  width: 30%;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+.cart .win-box .del-box .confirm .no {
+  margin-left: 20px;
+}
+.cart .win-box .del-box .confirm .ok {
+  background-color: red;
+}

@@ -1,0 +1,109 @@
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font: 14px "Microsoft YaHei", '宋体';
+  color: black;
+}
+input {
+  border: none;
+  outline-style: none;
+}
+ul,
+dl,
+ol {
+  list-style: none;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.bg-sprites {
+  background-image: url('../images/jd-sprites.png');
+  background-size: 200px 200px;
+}
+.header {
+  height: 44px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#eee, #ccc);
+}
+.header .back,
+.header .menu {
+  height: 44px;
+  width: 44px;
+  float: left;
+  padding: 13px 13px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.header .back {
+  background-position: -25px 0;
+}
+.header .menu {
+  float: right;
+  background-position: -60px 0;
+}
+.header .search {
+  overflow: hidden;
+  height: 30px;
+  margin-top: 7px;
+}

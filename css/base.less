@@ -1,0 +1,85 @@
+//base文件分两部分
+@color:#969696;
+//第一部分css reset初始化
+ body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img,
+ button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header,
+ menu, nav, section{
+  margin: 0;
+  padding: 0;
+  //设置除上css3盒子模型，padding和border自动内减
+  box-sizing: border-box;
+  //兼容
+  -webkit-box-sizing: border-box;
+  //去除移动端默认的点击高亮(设置为透明色)
+  -webkit-tap-highlight-color: transparent;
+}
+ body{
+   font:14px "Microsoft YaHei",'宋体';
+   color:black;
+ }
+ //去除表单元素的边框
+ input{
+   border:none;
+   //去除外围蓝色的小边框
+   outline-style:none;
+ }
+ ul,dl,ol{
+   list-style: none;
+ }
+ .fr{
+   float:right;
+ }
+ .fl{
+   float: left;
+ }
+ a,a:hover{
+   text-decoration: none;
+   color: #333;
+ }
+ //清除浮动
+ .clearfix::before,
+ .clearfix::after{
+   content: '';
+   display: block;
+   clear:both;
+   height: 0;
+   line-height: 0;
+   visibility: hidden;
+   
+ }
+//第二部分css common公共样式
+.bg-sprites{
+  background-image: url('../images/jd-sprites.png');
+  background-size:200px 200px;
+ }
+ //公共头部
+ .header{
+  height: 44px;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-image: linear-gradient(#eee,#ccc);
+  .back,.menu{
+    height: 44px;
+    width: 44px;
+    float: left;
+    padding: 13px 13px;
+    background-origin:content-box;
+    background-clip: content-box;
+
+  }
+  .back{
+    background-position: -25px 0;
+  }
+  .menu{
+    float: right;
+    background-position: -60px 0; 
+  }
+  .search{
+    overflow: hidden;
+    height: 30px;
+    margin-top:7px;
+  }
+
+ }
